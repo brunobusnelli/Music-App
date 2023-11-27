@@ -6,6 +6,7 @@ import "./pages/Home/home.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Login from "./auth/Login";
 import { useEffect, useState } from "react";
+import { setClientToken } from "./spotify";
 function App() {
   const [token, setToken] = useState("");
 
@@ -17,8 +18,10 @@ function App() {
       const _token = hash.split("&")[0].split("=")[1];
       window.localStorage.setItem("token", _token);
       setToken(_token);
+      setClientToken(_token)
     }else{
       setToken(token)
+      setClientToken(token)
     }
   }, []);
 

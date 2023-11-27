@@ -2,5 +2,8 @@
     width: calc(100% - 100px);
     height: 100%;
     background-color: #1E2A3E;
-    border-radius: 30px;
+    background-color: #1E2A3E;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #233656, #1E2A3E), repeating-radial-gradient(circle at center center, #233656, #233656, 23px, transparent 46px, transparent 23px);
+    background-blend-mode: multiply;
 }

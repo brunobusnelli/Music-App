@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './sidebar.css'
 import SidebarButton from './SidebarButton'
 import { MdDashboard } from "react-icons/md";
-import { IoLibrary } from "react-icons/io5";
+import { MdOutlineLibraryMusic } from "react-icons/md";
 import { FaPlay } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
 import apiClient from '../../spotify';
@@ -13,9 +13,7 @@ const Sidebar = () => {
   const [user, setUser] = useState([])
   useEffect(() => {
      apiClient.get("me").then(response =>{
-      console.log(response.data)
       setUser(response.data)
-      console.log(user)
     } )
   }, [])
   
@@ -25,7 +23,7 @@ const Sidebar = () => {
         <p className='user-name'>{user?.display_name}</p>
         <div>
           <SidebarButton title="Feed" to="/feed" icon={<MdDashboard />} />
-          <SidebarButton title="Library" to="/" icon={<IoLibrary />} />
+          <SidebarButton title="Library" to="/" icon={<MdOutlineLibraryMusic />} />
           <SidebarButton title="Player" to="/player" icon={<FaPlay />
 } />
         </div>

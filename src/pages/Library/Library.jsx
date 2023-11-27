@@ -12,11 +12,12 @@ const Library = () => {
   apiClient.get("me/playlists").then(function (response){
     setplaylists(response.data.items)
   })
-}, [])
+}, []);
+
   const navigate = useNavigate()
   const playPlaylist = (id) => {
-    navigate('/player', {state: {id: id}})
-  }
+    navigate('/player', { state: { id: id } })
+  }                       
 
 
   return (
@@ -24,12 +25,12 @@ const Library = () => {
       <div className="library-body">
       {
         playlists?.map(playlist=>(
-          <div className='playlist-card' key={playlist.id} onClick={()=>playPlaylist(playlist.id)}>
+          <div className='playlist-card' key={playlist.id} onClick={() => playPlaylist(playlist.id)}>
             <img src={playlist.images[0].url} alt="" className='playlist-art' />
             <p className='playlist-title'>{playlist.name}</p>
             <p className='playlist-subtitle'>{playlist.tracks.total} Songs</p>
             <div className="playlist-fade">
-              <IconContext.Provider value={{size: "40px", color: "white"}}>
+              <IconContext.Provider value={{size: "40px", color: "#c4d0e3"}}>
               <FaPlayCircle />
               </IconContext.Provider>
             </div>

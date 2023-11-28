@@ -8,4 +8,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: rgb(98,158,255);
+    background: 
+    linear-gradient(
+    75deg, 
+    rgb(14, 28, 54) 0%, 
+    rgba(54, 69, 98,0) 100%);
 }

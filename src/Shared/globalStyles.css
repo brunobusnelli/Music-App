@@ -7,3 +7,7 @@
     background-image: radial-gradient(circle at center center, #233656, #1E2A3E), repeating-radial-gradient(circle at center center, #233656, #233656, 23px, transparent 46px, transparent 23px);
     background-blend-mode: multiply;
 }
+
+.flex {
+    display: flex;
+}

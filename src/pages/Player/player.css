@@ -11,3 +11,10 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+
+.top-body{
+    height: 80%;
+    display: flex;
+}

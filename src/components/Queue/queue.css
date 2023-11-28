@@ -1,0 +1,65 @@
+.queue-container {
+        width: 100%;
+        height: 100%;
+        background: rgb(98,158,255);
+        background: 
+        linear-gradient(
+        75deg, 
+        rgb(14, 28, 54) 0%, 
+        rgba(54, 69, 98,0) 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.queue {
+    height: 85%;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.upNext {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    margin: 10px 0px 30px 0px;
+    padding-bottom: 10px;
+}
+
+.queue-list {
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+    
+}
+
+.queue-list::-webkit-scrollbar {
+    display: none;
+}
+
+.queue-item {
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px #c4d0e349 solid;
+}
+
+.queue-item:hover {
+    transform: scale(0.95);
+}
+
+.queue-item p {
+    margin: 0px;
+}
+
+.track-name{
+    width: 75%;
+    text-overflow: ellipsis;
+}

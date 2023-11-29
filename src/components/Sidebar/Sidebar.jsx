@@ -19,8 +19,10 @@ const Sidebar = () => {
   
   return (
     <div className='sidebar-container'>
+        <div className='user-container flex'>
         <img src={user?.images?.[0]?.url}  alt="profile img" className='profile-img' />
         <p className='user-name'>{user?.display_name}</p>
+        </div>
         <div>
           <SidebarButton title="Feed" to="/feed" icon={<MdDashboard />} />
           <SidebarButton title="Library" to="/" icon={<MdOutlineLibraryMusic />} />

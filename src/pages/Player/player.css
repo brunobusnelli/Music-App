@@ -12,9 +12,18 @@
     justify-content: space-between;
 }
 
-
+.bottom-player-body {
+    background: rgb(98,158,255);
+    background: 
+    linear-gradient(
+    75deg, 
+    rgb(14, 28, 54) 0%, 
+    rgba(54, 69, 98,0) 100%);
+    height: 26%;
+}
 
 .top-body{
-    height: 80%;
+    height: 74%;
     display: flex;
+    
 }

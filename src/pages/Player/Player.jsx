@@ -35,8 +35,13 @@ const Player = () => {
       </div>
       </div>
 
-      <div className="bottom-playe-body">
-        <AudioPlayer />
+      <div className="bottom-player-body">
+      <AudioPlayer
+          currentTrack={currentTrack}
+          total={tracks}
+          currentIndex={currentIndex}
+          setCurrentIndex={setCurrentIndex}
+        />
       </div>
     </div>
   )

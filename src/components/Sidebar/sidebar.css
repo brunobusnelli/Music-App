@@ -16,4 +16,11 @@
 
 .user-name {
     color: white;
+    margin: 15px 0px;
+}
+
+.user-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

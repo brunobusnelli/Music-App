@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./audioplayer.css";
-import Controls from "./Controls";
-import WaveAnimation from "./WaveAnimation";
+import "./audioPlayer.css";
+import Controls from "./controls";
+import WaveAnimation from "./waveAnimation";
 
 export default function AudioPLayer({
   currentTrack,
@@ -59,7 +59,6 @@ export default function AudioPLayer({
   useEffect(() => {
     audioRef.current.pause();
     audioRef.current = new Audio(audioSrc);
-
     setTrackProgress(audioRef.current.currentTime);
 
     if (isReady.current) {
@@ -97,7 +96,7 @@ export default function AudioPLayer({
     artists.push(artist.name);
   });
   return (
-    <div className="player-body">
+    <div className="player-body flex">
       <div className="player-right-body flex">
         <p className="song-title">{currentTrack?.name}</p>
         <p className="song-artist">{artists.join(" | ")}</p>

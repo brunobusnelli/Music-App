@@ -2,6 +2,7 @@ import React from "react";
 import "./waveanimation.css";
 
 export default function WaveAnimation({ isPlaying }) {
+  
   const waveClass = isPlaying ? "box active" : "box";
 
   return (

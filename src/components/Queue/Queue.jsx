@@ -16,7 +16,7 @@ const Queue = ({ tracks, setCurrentIndex }) => {
         <p className="upNext">Siguiente Cancion</p>
         <div className="queue-list">
           {tracks?.map((track, index) => (
-            <div className="queue-item flex" onClick={() => setCurrentIndex(index)}>
+            <div key={index + "key"} className="queue-item flex" onClick={() => setCurrentIndex(index)}>
               <p className="track-name">{track?.track?.name}</p>
               <p>{msToMinutes(track?.track?.duration_ms)}</p>
             </div>

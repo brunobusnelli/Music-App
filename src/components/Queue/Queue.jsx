@@ -8,7 +8,6 @@ const msToMinutes = (ms) => {
 };
 
 const Queue = ({ tracks, setCurrentIndex }) => {
-  console.log(tracks);
 
   return (
     <div className="queue-container flex">

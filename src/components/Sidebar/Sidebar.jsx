@@ -8,7 +8,7 @@ import { FaPlay } from 'react-icons/fa';
 import { FaSignOutAlt } from 'react-icons/fa';
 import apiClient from '../../spotify';
 
-const Sidebar = () => {
+const Sidebar = ({ token, handleLogout }) => {
   const [user, setUser] = useState([]);
   const navigate = useNavigate();
 
@@ -19,9 +19,7 @@ const Sidebar = () => {
   }, []);
 
   const handleSignOut = () => {
-    localStorage.removeItem('token');
-    navigate('/login');
-    window.location.reload();
+    handleLogout();
   };
 
   return (

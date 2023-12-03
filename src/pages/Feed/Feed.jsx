@@ -25,7 +25,6 @@ const Feed = () => {
         .catch((err) => console.error(err));
   }, []);
 
-  console.log(featured, newRelease)
 
 
 

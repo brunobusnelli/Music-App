@@ -3,7 +3,6 @@ import './feedcard.css';
 import FeedCardEntry from './FeedCardEntry';
 
 const FeedCard = ({ title, featured, newRelease }) => {
-  console.log("featured", featured, "newRelease", newRelease);
   
   return (
     <div className='card-container'>
